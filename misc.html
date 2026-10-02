@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership, Honors & Skills | Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        
+        <!-- Logo / Brand -->
+       <a href="index.html" class="flex items-center space-x-3 font-bold text-lg text-slate-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+       <!-- Logo Image -->
+            <img src="logo.png" alt="Majisha Jahan Disha Logo" class="w-8 h-8 rounded-lg object-contain">
+            <span>Majisha Jahan Disha</span>
+        </a>
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                Home
+            </a>
+            <a href="index.html#publications" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                Publications
+            </a>
+            <a href="index.html#research" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                Research
+            </a>
+            <a href="projects.html" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                Projects
+            </a>
+            
+            <a href="misc.html" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                Misc
+            </a>
+        </nav>
+
+        <!-- Right Controls: Theme Toggle & Back Button -->
+        <div class="flex items-center space-x-3">
+            <!-- Dark / Light Mode Toggle Button -->
+            <button id="theme-toggle" type="button" aria-label="Toggle Theme" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all focus:outline-none">
+                <i id="theme-toggle-dark-icon" class="fas fa-moon text-sm hidden"></i>
+                <i id="theme-toggle-light-icon" class="fas fa-sun text-sm hidden"></i>
+            </button>
+
+            <!-- Main Portfolio Link -->
+            <a href="index.html" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold transition-all shadow-sm">
+                <i class="fas fa-arrow-left text-xs"></i>
+                <span class="hidden sm:inline">Main Portfolio</span>
+            </a>
+        </div>
+    </div>
+</header>
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-grow space-y-12">
+
+        <!-- Page Hero Banner -->
+        <div class="space-y-3 border-b border-slate-200 dark:border-slate-800 pb-8">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 text-xs font-bold">
+                <i class="fas fa-award text-indigo-500"></i>
+                <span>Academic Standing & Service</span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                Honors, Service & Technical Profile
+            </h1>
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-3xl leading-relaxed">
+                An overview of academic distinctions, scholarly peer review, undergraduate thesis supervision, departmental leadership, technical proficiencies, and standardized test scores.
+            </p>
+        </div>
+
+        <!-- ================= SECTION 1: ACADEMIC SERVICE, PEER REVIEW & MENTORSHIP ================= -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-indigo-600 dark:bg-indigo-400 rounded-full"></div>
+                <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                    Academic Service & Peer Review
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                <!-- Peer Reviewer: ACM COMPASS 2026 -->
+                <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:border-indigo-500/50 transition-all flex space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 text-lg">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-bold text-slate-900 dark:text-white">Peer Reviewer</h3>
+                            <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/80 px-2 py-0.5 rounded-md">2026</span>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 dark:text-slate-400">ACM COMPASS 2026 Conference</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
+                            Served as an academic reviewer for multiple research paper submissions in ACM SIGCAS Computing and Sustainable Societies (COMPASS).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Undergrad Thesis Co-Supervisor -->
+                <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:border-indigo-500/50 transition-all flex space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-purple-50 dark:bg-purple-950/80 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0 text-lg">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-bold text-slate-900 dark:text-white">Thesis Co-Supervisor</h3>
+                            <span class="text-xs font-bold text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/80 px-2 py-0.5 rounded-md">Ongoing</span>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 dark:text-slate-400">BRAC CSE Department</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
+                            Co-supervising an undergraduate research team on their thesis methodology, experimental validation, and manuscript preparation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- BRAC University Thesis Defense Panelist -->
+                <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:border-indigo-500/50 transition-all flex space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 text-lg">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-bold text-slate-900 dark:text-white">Thesis Defense Panel Member</h3>
+                            <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/80 px-2 py-0.5 rounded-md">2 Terms</span>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 dark:text-slate-400">BRAC University</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
+                            Invited panel member for BRAC University undergraduate thesis defense sessions, evaluating technical depth, methodologies, and oral defenses.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HCCS Instructor -->
+                <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:border-indigo-500/50 transition-all flex space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-sky-50 dark:bg-sky-950/80 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0 text-lg">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-bold text-slate-900 dark:text-white">Research Instructor</h3>
+                            <span class="text-xs font-bold text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-950/80 px-2 py-0.5 rounded-md">Active</span>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 dark:text-slate-400">Human-Centered Computing and Society (HCCS)</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
+                            Actively contributing as an instructor, guiding students in human-centered computing research principles, user studies, and ethical AI design.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= SECTION 2: AWARDS & HONORS ================= -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-amber-500 rounded-full"></div>
+                <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                    Awards & Distinctions
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+                <!-- Dean's List -->
+                <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-amber-500"></div>
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-950/80 text-amber-600 dark:text-amber-400 flex items-center justify-center text-lg">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Dean's List Award</h3>
+                        <p class="text-xs font-semibold text-amber-600 dark:text-amber-400">BUET (3 out of 4 Academic Levels)</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Awarded for maintaining high academic performance across three undergraduate levels at BUET.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Board Stand HSC -->
+                <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-rose-500"></div>
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-rose-50 dark:bg-rose-950/80 text-rose-600 dark:text-rose-400 flex items-center justify-center text-lg">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">1st Place Board Merit</h3>
+                        <p class="text-xs font-semibold text-rose-600 dark:text-rose-400">Dhaka Board — HSC Examination 2019</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Secured the top position nationwide/board-wide in the Higher Secondary Certificate (HSC) Examination out of hundreds of thousands of candidates.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Programming Contest -->
+                <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-indigo-500"></div>
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-lg">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">3rd Place Podium</h3>
+                        <p class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">BUET Women in CSE Programming Contest (2021)</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Achieved 3rd position in algorithmic problem solving and competitive programming among female CSE undergraduates.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= SECTION 3: LEADERSHIP & ORGANIZATIONAL EXPERIENCE ================= -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-emerald-500 rounded-full"></div>
+                <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                    Leadership & Organizational Experience
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                <!-- Class Representative -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/80 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 text-xs font-bold">
+                            2 Consecutive Terms
+                        </span>
+                        <span class="text-xs font-semibold text-slate-500">BUET CSE</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white">Class Representative (CR)</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Served as the primary liaison between department faculty and the student body. Managed academic scheduling, examination logistics, assignment coordination, and constructive feedback loops to streamline course administration.
+                    </p>
+                </div>
+
+                <!-- BUET CSE Fest 2024 Organizer -->
+                <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="px-3 py-1 rounded-full bg-sky-50 dark:bg-sky-950/80 border border-sky-200 dark:border-sky-800 text-sky-700 dark:text-sky-300 text-xs font-bold">
+                            National Event
+                        </span>
+                        <span class="text-xs font-semibold text-slate-500">2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white">Organizer — BUET CSE Fest 2024</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Coordinated operations for major national segments, including the Poster Presentation Competition, Programming Contest, and the Cultural Gala Program, ensuring seamless execution across participant management and venue logistics.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= SECTION 4: TECHNICAL SKILLS ================= -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-purple-500 rounded-full"></div>
+                <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                    Technical Proficiencies
+                </h2>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+                
+                <!-- Languages -->
+                <div class="space-y-2">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center">
+                        <i class="fas fa-code mr-2 text-indigo-500"></i> Programming Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">C</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">C++</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Python</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Java</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">JavaScript</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Dart</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Shell</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">HTML5 & CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="space-y-2 pt-4 border-t border-slate-100 dark:border-slate-800">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center">
+                        <i class="fas fa-database mr-2 text-emerald-500"></i> Databases & Data Warehousing
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">PostgreSQL</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">MySQL</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Oracle DB</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Firebase Firestore</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Developer Tools -->
+                <div class="space-y-2 pt-4 border-t border-slate-100 dark:border-slate-800">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center">
+                        <i class="fas fa-layer-group mr-2 text-rose-500"></i> Frameworks, ML Tools & Environments
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Node.js</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Express.js</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Flutter</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">React.js</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">JavaFX</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">TensorFlow</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Keras</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">Git & GitHub</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold">LaTeX</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= SECTION 5: STANDARDIZED EXAMS ================= -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-sky-500 rounded-full"></div>
+                <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                    Standardized Test Scores
+                </h2>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="space-y-2 text-center md:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-sky-50 dark:bg-sky-950/80 text-sky-700 dark:text-sky-300 text-xs font-bold">
+                        <i class="fas fa-language"></i>
+                        <span>CEFR C2 Mastery Level</span>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white">TOEFL iBT Official Score</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Educational Testing Service (ETS)</p>
+                </div>
+
+                <!-- Total Score Callout -->
+                <div class="bg-slate-50 dark:bg-slate-800/60 p-4 rounded-xl border border-slate-200 dark:border-slate-700/80 text-center shrink-0">
+                    <span class="text-3xl font-black text-indigo-600 dark:text-indigo-400">114</span>
+                    <span class="text-sm font-bold text-slate-500 dark:text-slate-400"> / 120</span>
+                    <p class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 mt-1">C2 Proficient Grade</p>
+                </div>
+
+                <!-- Score Breakdown -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full md:w-auto">
+                    <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 text-center border border-slate-100 dark:border-slate-800">
+                        <span class="text-xs font-bold text-slate-400 uppercase block">Reading</span>
+                        <span class="text-lg font-bold text-slate-800 dark:text-slate-200">28<span class="text-xs text-slate-400">/30</span></span>
+                    </div>
+                    <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 text-center border border-slate-100 dark:border-slate-800">
+                        <span class="text-xs font-bold text-slate-400 uppercase block">Listening</span>
+                        <span class="text-lg font-bold text-slate-800 dark:text-slate-200">30<span class="text-xs text-slate-400">/30</span></span>
+                    </div>
+                    <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 text-center border border-slate-100 dark:border-slate-800">
+                        <span class="text-xs font-bold text-slate-400 uppercase block">Speaking</span>
+                        <span class="text-lg font-bold text-slate-800 dark:text-slate-200">28<span class="text-xs text-slate-400">/30</span></span>
+                    </div>
+                    <div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 text-center border border-slate-100 dark:border-slate-800">
+                        <span class="text-xs font-bold text-slate-400 uppercase block">Writing</span>
+                        <span class="text-lg font-bold text-slate-800 dark:text-slate-200">28<span class="text-xs text-slate-400">/30</span></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-6 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-4">
+            <p>© Portfolio — Bangladesh University of Engineering and Technology (BUET)</p>
+            <div class="flex space-x-6">
+                <a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Home</a>
+                <a href="projects.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="index.html#research" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Research</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+    // Initialize state based on localStorage or system preferences
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+        lightIcon.classList.remove('hidden');
+    } else {
+        document.documentElement.classList.remove('dark');
+        darkIcon.classList.remove('hidden');
+    }
+
+    // Toggle button event listener
+    themeToggleBtn.addEventListener('click', function() {
+        darkIcon.classList.toggle('hidden');
+        lightIcon.classList.toggle('hidden');
+
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        }
+    });
+</script>
+
+</body>
+</html>
