@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Anti-Flicker Theme Detection (Default Light) -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
     <title>Majisha Jahan Disha </title>
     
     <!-- Google Fonts: Inter -->
@@ -241,168 +249,66 @@
 ```
 
         <!-- Research Interests Section -->
-        <!-- Research Interests Section -->
-<section id="research-interests" class="scroll-mt-28 py-8">
-    <div class="space-y-5">
+<section id="research-interests" class="scroll-mt-28 py-6">
+    <div class="space-y-4">
         <!-- Section Title -->
         <div class="flex items-center space-x-3">
-            <div class="w-1.5 h-7 bg-indigo-600 dark:bg-indigo-400 rounded-full"></div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+            <div class="w-1.5 h-6 bg-indigo-600 dark:bg-indigo-400 rounded-full"></div>
+            <h2 class="text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">
                 Research Interests
             </h2>
         </div>
 
-        <!-- Compact 6-Card Grid (3 Columns on Large Screens) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Clean 4-Pillar Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
 
-            <!-- 1. Health Informatics & Policy AI -->
-            <div class="group p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-indigo-500/50 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="w-9 h-9 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-base group-hover:scale-105 transition-transform">
-                            <i class="fas fa-heart-pulse"></i>
-                        </div>
-                        <span class="px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 text-[10px] font-bold uppercase tracking-wider">
-                            Health AI
-                        </span>
+            <!-- 1. Health Informatics -->
+            <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                <div class="flex items-center space-x-2.5 mb-2">
+                    <div class="w-7 h-7 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-sm">
+                        <i class="fas fa-heart-pulse"></i>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5">
-                        Health Informatics
-                    </h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Physiological metric analysis, stress detection modeling, and data-driven algorithms for healthcare policy reform.
-                    </p>
+                    <h3 class="text-sm font-bold text-slate-900 dark:text-white">Health Informatics</h3>
                 </div>
-                <div class="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-1">
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Physiological Metrics</span>
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Policy Analytics</span>
-                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Physiological metrics, stress modeling, healthcare AI.</p>
             </div>
 
-            <!-- 2. Serious Games & Interactive HCI -->
-            <div class="group p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-sky-500/50 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="w-9 h-9 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 flex items-center justify-center text-base group-hover:scale-105 transition-transform">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <span class="px-2 py-0.5 rounded-full bg-sky-50 dark:bg-sky-950/80 text-sky-700 dark:text-sky-300 text-[10px] font-bold uppercase tracking-wider">
-                            HCI Research
-                        </span>
+            <!-- 2. Human-Computer Interaction -->
+            <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                <div class="flex items-center space-x-2.5 mb-2">
+                    <div class="w-7 h-7 rounded-lg bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 flex items-center justify-center text-sm">
+                        <i class="fas fa-hand-holding-heart"></i>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5">
-                        Serious Games & HCI
-                    </h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Culturally responsive serious games and co-design frameworks to elevate female endocrine health literacy (PCOS).
-                    </p>
+                    <h3 class="text-sm font-bold text-slate-900 dark:text-white">HCI & Digital Health</h3>
                 </div>
-                <div class="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-1">
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Endocrine Literacy</span>
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Co-Design</span>
-                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Health equity, serious games, co-design interventions.</p>
             </div>
 
-            <!-- 3. Algorithm Engineering & Graph Theory -->
-            <div class="group p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-amber-500/50 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="w-9 h-9 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center text-base group-hover:scale-105 transition-transform">
-                            <i class="fas fa-diagram-project"></i>
-                        </div>
-                        <span class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 text-[10px] font-bold uppercase tracking-wider">
-                            Theoretical CS
-                        </span>
+            <!-- 3. Optimization -->
+            <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                <div class="flex items-center space-x-2.5 mb-2">
+                    <div class="w-7 h-7 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm">
+                        <i class="fas fa-network-wired"></i>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5">
-                        Algorithm Engineering
-                    </h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Graph partitioning heuristics (GKLR, GA), network optimization, and empirical algorithmic complexity benchmarking.
-                    </p>
+                    <h3 class="text-sm font-bold text-slate-900 dark:text-white">Optimization</h3>
                 </div>
-                <div class="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-1">
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Graph Partitioning</span>
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Optimizations</span>
-                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Metaheuristic cloud resource scheduling.</p>
             </div>
 
-            <!-- 4. Computer Vision & Medical Imaging -->
-            <div class="group p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-rose-500/50 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="w-9 h-9 rounded-lg bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 flex items-center justify-center text-base group-hover:scale-105 transition-transform">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <span class="px-2 py-0.5 rounded-full bg-rose-50 dark:bg-rose-950/80 text-rose-700 dark:text-rose-300 text-[10px] font-bold uppercase tracking-wider">
-                            Applied AI
-                        </span>
+            <!-- 4. Algorithm Engineering -->
+            <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                <div class="flex items-center space-x-2.5 mb-2">
+                    <div class="w-7 h-7 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center text-sm">
+                        <i class="fas fa-diagram-project"></i>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5">
-                        Computer Vision & Imaging
-                    </h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Deep feature extraction for medical diagnostic pipelines (ultrasound) and smart hazardous waste risk mapping.
-                    </p>
+                    <h3 class="text-sm font-bold text-slate-900 dark:text-white">Algorithm Engineering</h3>
                 </div>
-                <div class="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-1">
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Ultrasound AI</span>
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Risk Mapping</span>
-                </div>
-            </div>
-
-            <!-- 5. Metaheuristic Optimization & Cloud Systems -->
-            <div class="group p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-emerald-500/50 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="w-9 h-9 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-base group-hover:scale-105 transition-transform">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <span class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 text-[10px] font-bold uppercase tracking-wider">
-                            Systems
-                        </span>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5">
-                        Metaheuristic Optimization
-                    </h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Hybrid optimization models (FWA, WOA) for complex resource allocation and distributed cloud scheduling.
-                    </p>
-                </div>
-                <div class="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-1">
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Cloud Scheduling</span>
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Metaheuristics</span>
-                </div>
-            </div>
-
-            <!-- 6. Machine Learning & Bioinformatics -->
-            <div class="group p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-purple-500/50 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="w-9 h-9 rounded-lg bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex items-center justify-center text-base group-hover:scale-105 transition-transform">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <span class="px-2 py-0.5 rounded-full bg-purple-50 dark:bg-purple-950/80 text-purple-700 dark:text-purple-300 text-[10px] font-bold uppercase tracking-wider">
-                            Data Science
-                        </span>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5">
-                        Machine Learning & Bio-AI
-                    </h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Unsupervised stress clustering, statistical modeling, and genomic sequence analysis algorithms.
-                    </p>
-                </div>
-                <div class="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-1">
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Unsupervised ML</span>
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">Bioinformatics</span>
-                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Metaheuristic algorithms, graph partitioning, network optimization, benchmarking.</p>
             </div>
 
         </div>
     </div>
 </section>
-
         <!-- SECTION 3: PUBLICATIONS -->
         <section id="publications" class="scroll-mt-28 space-y-6">
             <div class="border-b border-slate-200 dark:border-slate-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -533,7 +439,7 @@
                     Female Endocrine Disorders & Interactive Digital Health Interventions
                 </h3>
                 <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-5 max-w-4xl">
-                    Investigating community health literacy surrounding female endocrine disorders (PCOS) to design culturally responsive, serious-game interventions for youth and young adults.
+                    Investigating community health literacy surrounding female endocrine disorders to design culturally responsive, serious-game interventions for youth and young adults.
                 </p>
 
                 <!-- Sub-Paper Grid (2 Columns) -->
@@ -564,7 +470,7 @@
                                 <span class="text-xs px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 font-bold">
                                     Ongoing
                                 </span>
-                                <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-900/60 text-sky-800 dark:text-sky-200">CHI PLAY / JMIR</span>
+                                <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-900/60 text-sky-800 dark:text-sky-200"> Target: CHI PLAY / JMIR</span>
                             </div>
                             <h4 class="text-sm font-bold text-slate-900 dark:text-white mb-2">
                                 Serious Game for Youth Hormonal Health Literacy
@@ -828,64 +734,65 @@
         <span id="toastMsg">Copied to clipboard!</span>
     </div>
 
-    <!-- JavaScript Logic -->
     <script>
-        // Dark / Light Theme Toggle Logic
-        const themeToggleBtn = document.getElementById('themeToggleBtn');
-        const themeIcon = document.getElementById('themeIcon');
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to update sun/moon icons based on current mode
+            function updateThemeIcons() {
+                const isDark = document.documentElement.classList.contains('dark');
+                const themeIcons = document.querySelectorAll('#themeIcon');
+                
+                themeIcons.forEach(icon => {
+                    if (isDark) {
+                        icon.className = 'fas fa-sun text-base text-amber-400';
+                    } else {
+                        icon.className = 'fas fa-moon text-base';
+                    }
+                });
+            }
 
-        // Check local storage or system preferences
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-            themeIcon.className = 'fas fa-sun text-base text-amber-400';
-        } else {
-            document.documentElement.classList.remove('dark');
-            themeIcon.className = 'fas fa-moon text-base';
-        }
+            // Sync icon state on page load
+            updateThemeIcons();
 
-        themeToggleBtn.addEventListener('click', () => {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.theme = 'light';
-                themeIcon.className = 'fas fa-moon text-base';
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.theme = 'dark';
-                themeIcon.className = 'fas fa-sun text-base text-amber-400';
+            // Toggle logic for theme button
+            const themeBtns = document.querySelectorAll('#themeToggleBtn');
+            themeBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const isDark = document.documentElement.classList.toggle('dark');
+                    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                    updateThemeIcons();
+                });
+            });
+
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
             }
         });
 
-        // Mobile Drawer Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // BibTeX Accordion Toggle
+        // BibTeX & Toast Utilities
         function toggleBibtex(id) {
             const el = document.getElementById(id);
-            if (el) {
-                el.classList.toggle('hidden');
-            }
+            if (el) el.classList.toggle('hidden');
         }
 
-        // Copy BibTeX to Clipboard
         function copyBibtex(codeId) {
             const codeEl = document.getElementById(codeId);
             if (!codeEl) return;
 
             const textToCopy = codeEl.innerText;
-
-            // Use execCommand fallback for iFrame compatibility
             const textArea = document.createElement("textarea");
             textArea.value = textToCopy;
             document.body.appendChild(textArea);
@@ -900,18 +807,16 @@
             document.body.removeChild(textArea);
         }
 
-        // CV Download Action Placeholder
-        function downloadCVPlaceholder() {
-            showToast("Opening CV document...");
-            // Link to actual PDF file when deployed
-            window.open('https://github.com/MajishaJahan', '_blank');
-        }
+        // function downloadCVPlaceholder() {
+        //     showToast("Opening CV document...");
+        //     window.open('https://github.com/MajishaJahan', '_blank');
+        // }
 
-        // Toast Notification System (Replaces Alert)
         function showToast(message) {
             const toast = document.getElementById('toast');
             const toastMsg = document.getElementById('toastMsg');
-            
+            if (!toast || !toastMsg) return;
+
             toastMsg.textContent = message;
             toast.classList.remove('translate-y-20', 'opacity-0');
             toast.classList.add('translate-y-0', 'opacity-100');
